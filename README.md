@@ -1,4 +1,4 @@
-# Montreal Forced Aligner 食用指南
+# Montreal Forced Aligner For Singing
 
 
 ### Conda environment installation
@@ -80,9 +80,9 @@ mfa align [需要推理的数据集路径] \
 [声学模型路径] \
 [输出的TextGrid文件保存路径]
 
-mfa align /datajuiceFS/a100/zulin/dataset/FA_data/0220_test \
-/datajuiceFS/a100/zulin/code/Montreal-Forced-Aligner_lastest/zz_logs/0220_test/Qi_dictionary_v2.dict \
-/datajuiceFS/a100/zulin/code/Montreal-Forced-Aligner_lastest/zz_logs/0220_test/acoustic_model.zip \
-/datajuiceFS/a100/zulin/dataset/FA_data/0220_test-out
+mfa align /datajuiceFS/a100/zulin/code/Montreal-Forced-Aligner-For-Singing/zz_test/wav_preprocessed \
+/datajuiceFS/a100/zulin/code/Montreal-Forced-Aligner-For-Singing/zz_logs/wav_preprocessed/dictionary.dict \
+/datajuiceFS/a100/zulin/code/Montreal-Forced-Aligner-For-Singing/zz_logs/wav_preprocessed/acoustic_model.zip \
+/datajuiceFS/a100/zulin/code/Montreal-Forced-Aligner-For-Singing/zz_test/wav_preprocessed
 
 ```
