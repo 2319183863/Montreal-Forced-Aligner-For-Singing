@@ -1,0 +1,23 @@
+beam: 10
+retry_beam: 400
+
+features:
+  type: "mfcc"
+  use_energy: false
+  frame_shift: 10
+  use_pitch: false
+
+training:
+  - monophone:
+      num_iterations: 4
+      max_gaussians: 100
+      subset: 1000
+
+  - lda:
+      num_iterations: 15
+      num_leaves: 500
+      max_gaussians: 4000
+      subset: 1000
+      features:
+          splice_left_context: 3
+          splice_right_context: 3
